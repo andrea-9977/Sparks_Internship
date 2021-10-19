@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="static/function.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="static/images/logo2.png" alt="BankingSite">
+        </div>
+        <ul>
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="/customer">Customer</a></li>
+            <li class="item"><a href="/transfer">Transfer</a></li>
+            <li class="item"><a href="/history_cus">History</a></li>
+        </ul>
+
+
+    </nav>
+    <img class="transferpic" src="static/images/transferbg.jpg" alt="transferbg">
+   
+    <div class="container1">
+        <!-- <img class="transferpic" src="static/images/transferbg.jpg" alt="transferbg"> -->
+        <div class="row col-md-6 col-md-offset-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Transfer Money
+                </div>
+
+                <div class="panel-body">
+                    <form method="POST" action="">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Sender's Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="sender" placeholder="Sender's Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Sender's Account</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" name="accsender" placeholder="Sender's Account">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Receivers's Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" name="receiver" placeholder="Receiver's Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Receivers's Account</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" name="accreceiver" placeholder="Receiver's Account">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput3" class="form-label">Amount</label>
+                            <input type="number" class="form-control" id="formGroupExampleInput3" name="amount" placeholder="Amount to be transfered">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput3" class="form-label">Amount</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput3" name="amtwds" placeholder="Amount in words to be transfered">
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-primary" onclick=submitform()>Transfer</button>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+    </html>
